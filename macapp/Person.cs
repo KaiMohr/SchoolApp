@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 namespace macapp
 {
     public abstract class Person
@@ -8,5 +9,16 @@ namespace macapp
         public string Email { get; set; }
 
         public abstract float ComputeGradeAverage();
+
+        public virtual string SendMessage(string message) 
+        {
+            var sb = new StringBuilder();
+            var timeStamp = string.Format("Sent on {0:D} at {0:t}", DateTime.Now);
+            sb.AppendLine("");
+            sb.AppendLine("Dear " + FirstName + ",");
+            sb.AppendLine(message);
+            return sb.ToString();
+        
+        }
     }
 }

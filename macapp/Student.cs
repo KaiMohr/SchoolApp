@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 namespace macapp
 {
     public class Student : Person
@@ -9,6 +10,13 @@ namespace macapp
         public override float ComputeGradeAverage()
         {
             return 4.0f;
+        }
+        public override string SendMessage(string message)
+        {
+            var original = base.SendMessage(message);
+            var sb = new StringBuilder();
+            sb.AppendLine("This Message is privat and confidential");
+            return sb.ToString();
         }
     }
 }
