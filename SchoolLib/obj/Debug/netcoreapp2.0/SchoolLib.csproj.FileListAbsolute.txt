@@ -1,0 +1,3 @@
+/Users/kai/Projects/SchoolApp/SchoolLib/obj/Debug/netcoreapp2.0/SchoolLib.csproj.CoreCompileInputs.cache
+/Users/kai/Projects/SchoolApp/SchoolLib/obj/Debug/netcoreapp2.0/SchoolLib.AssemblyInfoInputs.cache
+/Users/kai/Projects/SchoolApp/SchoolLib/obj/Debug/netcoreapp2.0/SchoolLib.AssemblyInfo.cs
