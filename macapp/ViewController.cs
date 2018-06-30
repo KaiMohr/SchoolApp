@@ -39,7 +39,7 @@ namespace macapp
             ClickedLabel.StringValue = string.Format("The button has been clicked {0} time{1}.", ++numberOfTimesClicked, (numberOfTimesClicked < 2) ? "" : "s");
 
             var testSchool = new School();
-            testSchool.Name = txtName.StringValue; // "Central City High";
+            testSchool.Name = txtName.StringValue; 
             testSchool.Address = txtAddress.StringValue;
             testSchool.City = txtCity.StringValue;
             testSchool.State = txtState.StringValue;
@@ -66,21 +66,37 @@ namespace macapp
         {
             ClickedLabel.StringValue = string.Format("The button has been clicked {0} time{1}.", ++numberOfTimesClicked, (numberOfTimesClicked < 2) ? "" : "s");
             var teacher = new Teacher();
+            teacher.FirstName = txtName.StringValue;
             var gp = teacher.ComputeGradeAverage();
 
             var gpWindow = new NSAlert();
             gpWindow.MessageText = "grade average";
-            gpWindow.InformativeText = "the grade is " + gp;
+            gpWindow.InformativeText = "the grade is " + gp + teacher.SendMessage(" This is a message for all the teacher");
             gpWindow.RunModal();
+
+
         }
 
         partial void btnTestStudent(Foundation.NSObject sender)
         {
             var student = new Student();
+            student.FirstName = txtName.StringValue;
+          
             var gp = student.ComputeGradeAverage();
 
+            var experiment = new ScienceExperiment();
+            experiment.MaximumScore = 20;
+            experiment.Score = 1;
+            experiment.Conclusion = "Great";
+
+            var englishtest = new EnglishPaper();
+            englishtest.Score = 12;
+            englishtest.MaximumScore = 11;
+
+            var bestOfTwo = ScoreUtility.BestOfTwo(englishtest, experiment);
+
             var gpWindow = new NSAlert();
-            gpWindow.InformativeText = "the grade is" + gp;
+            gpWindow.InformativeText = "the grade is" + gp + student.SendMessage(" This is a message for all the students" + " best of two: " + bestOfTwo);
             gpWindow.RunModal();
 
         }

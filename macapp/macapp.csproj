@@ -87,6 +87,9 @@
     <Compile Include="Student.cs" />
     <Compile Include="EnglishPaper.cs" />
     <Compile Include="ScienceExperiment.cs" />
+    <Compile Include="IScored.cs" />
+    <Compile Include="ScoreUtility.cs" />
+    <Compile Include="ExtensionMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />

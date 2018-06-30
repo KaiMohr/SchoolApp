@@ -15,7 +15,8 @@ namespace macapp
         {
             var original = base.SendMessage(message);
             var sb = new StringBuilder();
-            sb.AppendLine("This Message is privat and confidential");
+            sb.AppendLine(original);
+            sb.AppendLine(" This Message is privat and confidential");
             return sb.ToString();
         }
     }

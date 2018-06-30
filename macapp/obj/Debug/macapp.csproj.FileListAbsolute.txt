@@ -8,7 +8,6 @@
 /Users/kai/Projects/SchoolApp/macapp/obj/Debug/ibtool/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib
 /Users/kai/Projects/SchoolApp/macapp/obj/Debug/ibtool/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib
 /Users/kai/Projects/SchoolApp/macapp/obj/Debug/macapp.csproj.CoreCompileInputs.cache
-/Users/kai/Projects/SchoolApp/macapp/obj/Debug/macapp.csprojResolveAssemblyReference.cache
 /Users/kai/Projects/SchoolApp/macapp/bin/Debug/macapp.exe
 /Users/kai/Projects/SchoolApp/macapp/bin/Debug/macapp.pdb
 /Users/kai/Projects/SchoolApp/macapp/obj/Debug/macapp.exe
